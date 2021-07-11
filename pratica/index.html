@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" onclick="trocaCor(this)"></div>
+    <div class="box" onclick="trocaCor(this)"></div>
+    <a href="./flex.html"><button>Flex</button></a>
+</body>
+
+<script>
+    function trocaCor(el) {
+        if (el.classList.contains('red')) {
+            el.style.background = 'white';
+            el.classList.remove('red');
+            el.classList.remove('trans');
+            el.style.transform = 'rotateZ(-90deg)';
+        } else {
+            el.style.background = 'red';
+            el.classList.add('red');
+            el.classList.add('trans');
+            el.style.transform = 'rotateZ(90deg)';
+        }
+    }
+</script>
+
+</html>

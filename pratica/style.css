@@ -1,0 +1,30 @@
+body {
+    background-color: #010101;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    transition: all 2s;
+    transform-origin: 50% 50%;
+}
+.container {
+    background-color: #fff;
+    height: 300px;
+    width: 10px;
+    margin: 10px;
+    transition: ease-in-out 1s;
+    transform-origin: 100% 100%;
+}
+
+.trans {
+    transition: all 2s;
+}

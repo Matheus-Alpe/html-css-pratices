@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.section-title {
+    color: #87629A;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-content {
+    width: 62%;
+}
+
+.secondary-content {
+    width: 32%
+}
+
+header {
+    background: #136c72;
+    padding: .5em 0;
+}
+
+.logo {
+    flex-shrink: 0;
+    /* margin-right: 1em; */
+}
+
+.nav {
+
+    display: flex;
+    flex-grow: 1;
+    /* flex-shrink: 1; default */
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    font-size: .9rem;
+}
+
+.nav__list--primary {
+    margin-right: auto;
+}
+
+.nav__item+.nav__item {
+    /* Aplica a margem se o elemento conter uma mesma classe q ele */
+    margin-left: 1em;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    ;
+}
+
+.nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border-radius: 10em;
+}
+
+.nav__link:hover {
+    opacity: .75;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__img {
+    align-self: flex-start;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.main {
+    margin-top: 3em;
+}
+
+.sidebar {
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    background-color: #136c72;
+}
+
+
+@media (min-width: 601px) {
+    .nav__list--primary {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .row {
+        display: block;
+    }
+
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+    }
+
+    .hero__img {
+        margin-top: 2em;
+    }
+}

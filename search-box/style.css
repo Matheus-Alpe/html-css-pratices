@@ -1,0 +1,61 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+:root {
+    --bg-primary: #e84118;
+    --bg-secondary: #2f3640;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-primary);
+}
+
+.search-box {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-secondary);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover > .search-text {
+    width: 210px;
+    padding: 0 0 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: white
+}
+
+.search-btn {
+    color: var(--bg-primary);
+    background-color: var(--bg-secondary);
+    text-decoration: none;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    align-items: center;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}

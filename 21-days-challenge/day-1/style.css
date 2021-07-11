@@ -1,0 +1,38 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #232323;
+    height: 100vh;
+ }
+
+.parent {
+    background-color: #23424a;
+    /* padding: 50px; */
+
+    /* porcentagem define responsividade */
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+}
+
+.child {
+    background-color: #38cfd9;
+
+    width: 50%;
+    height: 50%;
+}
+
+.container {
+    background-color: #23424a;
+    color: white;
+
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 5em; /* 16 * 5 = 80px */
+    /* evitar de usar height */
+    /* height: 300px; */
+}

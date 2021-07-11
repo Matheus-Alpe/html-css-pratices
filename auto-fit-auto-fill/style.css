@@ -1,0 +1,92 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    background: #333;
+    min-height: 90vh;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.portfolio-container {
+    margin-bottom: 1em;
+}
+
+.portfolio-fit,
+.portfolio-fill {
+    padding: 1em;
+    display: grid;
+    grid-gap: 1em;
+}
+
+.portfolio-fit {
+    /* auto-fit preenche o conteudo possivel na tela */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio-fill {
+    /* auto-fill preenche o conteudo possivel na coluna, não tendo conteudo ele apresenta colunas vazias */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.title {
+    text-align: center;
+    color: #00c896;
+}
+
+.title span {
+    color: #ffee01;
+}
+
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+
+.portfolio-card>img {
+    max-width: 100%;
+}
+
+.portfolio-card-title {
+    margin-left: .5em;
+}
+
+.portfolio-card-p {
+    overflow-y: scroll;
+    text-align: justify;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    color: #efefef;
+    padding: .22em;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: comingLeft .5s;
+}
+
+@keyframes comingLeft{
+    from {
+        left: -100%;
+    }
+    
+    to {
+        left: 0;
+    }
+}
+
+.portfolio-card:hover>.portfolio-card-p {
+    display: block;
+}
+
+@media (min-width: 500px) {
+    body {
+        margin: 3em;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #6d6d6d;
+        }
+
+        a,
+        ul {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-size: 1.2em;
+        }
+
+        header {
+            height: 50px;
+            background-color: #1b1a1a;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 1000px;
+        }
+
+        .container-content {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+
+
+        .align-texto {
+            text-align: center;
+
+            background-color: rgb(70, 70, 70);
+            border-radius: 10px;
+        }
+        .align-texto p {
+            text-align: justify;
+            margin: 40px 20px 0;
+        }
+
+
+        header .container {
+            padding: 0 30px;
+        }
+
+        .logo {
+            flex: 1 0 auto;
+        }
+
+        .logo a {
+            margin-left: 5%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5em;
+        }
+
+
+        .flex-row-jc-ai {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul {
+            justify-content: flex-end;
+        }
+
+        .menu,
+        ul {
+            flex: 2 1 auto;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .menu li {
+            margin: 0 5%;
+        }
+
+        .menu li:last-child {
+            margin: 0 0 0 5%;
+        }
+
+        @media (max-width: 580px) {
+            a,
+            ul {
+                font-size: 1em;
+            }
+
+            .logo a {
+            font-size: 2em;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container flex-row-jc-ai">
+            <div class="logo">
+                <a href="./flex.html">Code Room</a>
+            </div>
+            <nav class="menu">
+                <ul class="flex-row-jc-ai">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-content">
+        <section class="container align-texto">
+            <h2>Titulo do texto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, autem itaque esse a voluptates
+                architecto, accusantium commodi exercitationem perspiciatis voluptatem alias reprehenderit excepturi
+                laboriosam tempore cum eum temporibus sapiente blanditiis quod nulla quia ducimus nesciunt. Facere amet
+                tempore libero quis, adipisci nulla, tempora nisi aperiam, eos architecto deleniti impedit recusandae
+                voluptatem officiis provident beatae repudiandae iure ipsam nobis! Sunt sapiente quisquam obcaecati
+                laudantium blanditiis nisi molestias nulla repellat quae alias iusto ullam, labore quod at iste
+                doloremque accusamus tempora, voluptates consequuntur eaque fuga placeat suscipit harum. Facilis natus
+                perspiciatis ipsa ea repudiandae deserunt consequuntur. Voluptas deleniti est molestias obcaecati quos!
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,500');
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    min-height: calc(100% - 400px);
+    /* min-height é a chave */
+    display: grid;
+    place-items: center;
+}
+
+/* CARD */
+.card {
+    margin: 1rem 0;
+    position: relative;
+    width: 40%;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .35);
+}
+
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+}
+
+.card::before {
+    top: 1.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.card::after {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+}
+
+.card__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.card__body {
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 3rem;
+}
+
+.card__title,
+.card__text {
+    margin: 0;
+}
+
+.card__title {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: .5em;
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+
+.card__title::before,
+.card__title::after {
+    content: '';
+    position: absolute;
+    background: yellow;
+}
+
+.card__title::before {
+    width: calc(100% + 5rem);
+    top: -.1em;
+    bottom: -.15em;
+    left: -5rem;
+    z-index: -1;
+    box-shadow: inset -15px 0 10px -10px rgba(0, 0, 0, .5);
+}
+
+.card__title::after {
+    top: -.1em;
+    bottom: -.15em;
+    left: calc(100% + 3rem);
+    width: 3rem;
+    box-shadow: inset 12px 0 10px -10px rgba(0, 0, 0, .5);
+}
+
+.card__text {
+    text-align: right;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    min-height: 400px;
+    position: relative;
+}
+
+.footer-content {
+    min-height: 350px;
+    display: flex;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 25px;
+}
+
+.footer-section h1,
+.footer-section h2 {
+    margin: 0;
+    color: white;
+}
+
+.footer-content .about h1 span {
+    color: #05f7ff;
+}
+
+.footer-content .about .contact span {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.footer-content .about .socials {
+    margin-top: 1rem;
+}
+
+.footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 40px;;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#icon-facebook:hover {
+    color: #036CE4;
+    border: 1px solid #036CE4;
+}
+
+#icon-instagram:hover {
+    color: #dc2743;
+    border: 1px solid #dc2743;
+}
+
+#icon-twitter:hover {
+    color: #1A91DA;
+    border: 1px solid #1A91DA;
+}
+
+#icon-youtube:hover {
+    color: #FF0000;
+    border: 1px solid #FF0000;
+}
+
+.footer-content .links h2 {
+    margin: 0;
+}
+
+.footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+
+.footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+}
+
+.footer-content .contact-form form {
+    margin-top: 1rem;
+}
+
+.footer-content .contact-form .contact-input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+}
+
+.footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+
+.btn {
+    background: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #005255;
+}
+
+.contact-btn {
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    float: right;
+}
+
+.footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}

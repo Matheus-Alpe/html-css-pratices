@@ -1,0 +1,21 @@
+body {
+    background-color: #272527;
+}
+
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+
+.container {
+    column-count: 2;
+    column-gap: 10px;
+}

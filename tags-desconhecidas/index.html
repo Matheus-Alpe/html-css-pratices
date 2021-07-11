@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7 Tags Desconhecidas</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *, *::after, *::before {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .container > section {
+            padding: 1em 0;
+            position: relative;
+            border-bottom: 2px solid #333;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>7+ Tags HTML que você precisa conhecer!</h1>
+
+        <section>
+            <h2>Tag: Details</h2>
+            <details>
+                <summary>Conheça os criadores</summary> <!--summary é pra representar o título da tag details-->
+                <section>
+                    <div>Cleiton Souza <small>COO</small></div>
+                    <div>Diego Fernandes <small>CTO</small></div>
+                    <div>Robson Marques <small>CEO</small></div>
+                </section>
+            </details>
+        </section>
+
+        <section>
+            <h2>Tag: Datalist</h2>
+            <label for="weekday">Selecione o dia</label>
+            <!--o id do datalist tem que ser o mesmo no list do input, para assim fazer a conecção entre os dois-->
+            <input list="weekdays" name="weekday" id="weekday"> 
+            <datalist id="weekdays">
+                <option value="Domingo"></option>
+                <option value="Segunda"></option>
+                <option value="Terça"></option>
+                <option value="Quarta"></option>
+                <option value="Quinta"></option>
+                <option value="Sexta"></option>
+                <option value="Sábado"></option>
+            </datalist>
+        </section>
+
+        <section>
+            <h2>Tag: Content Editable</h2>
+            <h3>Tarefas Diárias</h3>
+            <ul contenteditable>
+                <li> 1. Gravar vídeos CodeDrops</li>
+                <li> 2. Criar vídeo para o curso</li>
+                <li> 3. Estudar</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tag: Mark</h2>
+            <p>Você vai aprender <mark>até o final da sua jornada</mark> e mesmo assim, terá muito pra aprender.</p>
+        </section>
+
+        <section>
+            <h2>Tag: Blockquote & Cite</h2>
+            <blockquote>A tag blockquote faz uma referênciação, seja ela um filósofo, escritores e etc. Enquanto a tag Cite, cita o autor. <cite>Mayk Brito</cite></blockquote>
+        </section>
+
+        <section>
+            <h2>Tag: Optgroup</h2>
+            <label for="avaiable">Em cartaz</label>
+            <select name="avaiable" id="avaiable">
+                <optgroup label="19h00">
+                    <option value="1">Titanic</option>
+                    <option value="2">Moulin Rouge</option>
+                    <option value="3">Cidade de Deus</option>
+                </optgroup>
+                <optgroup label="20h00">
+                    <option value="4">O Senhor dos Anéis</option>
+                    <option value="5">Batman</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <h2>Tag: Progress</h2>
+            <progress id="bar" value="0" max="100">Progress: 50%</progress>
+        </section>
+
+        <section>
+            <h2>Tag: inputs</h2>
+            
+            <div>
+                <label for="volume">Range</label>
+                <input type="range" id="volume" name="volume" min="0" max="10">
+            </div>
+
+            <div>
+                <label for="when">Date</label>
+                <input type="date" id="when" name="trip-start" value="2020-12-02" min="2020-12-10" max="2021-02-26">
+            </div>
+
+            <div>
+                <label for="color"></label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div>
+                <label for="hour"></label>
+                <input type="time" id="hour" name="hour" value="15:00">
+            </div>
+
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

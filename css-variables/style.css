@@ -1,0 +1,35 @@
+
+:root {
+    --bc-primary: #282828;
+    --bc-secondary: pink;
+    --font-color: rgb(255, 238, 0);
+    --font-sm: 16px;
+    --font-md: 32px;
+    --font-lg: 64px;
+    --lg: 1100px;
+    --sm: 300px;
+    --pq: 100px;
+}
+
+body {
+    background-color: var(--bc-primary);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--lg);
+    background-color: var(--bc-secondary);
+}
+
+p {
+    color: var(--bc-primary);
+    font-size: var(--font-lg);
+}
+
+h1 {
+    color: var(--bc-primary)
+}
+
+header {
+    color: var(--font-color);
+}
