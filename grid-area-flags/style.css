@@ -1,0 +1,21 @@
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+html {
+  background: #363636; }
+
+.flag-wrapper {
+  position: relative;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr 50px; }
+  .flag-wrapper .flag_1 {
+    grid-area: 1 / 3 / 2 / 4;
+    background: #fff; }
+  .flag-wrapper .flag_2 {
+    grid-area: 3 / 3 / 4 / 4;
+    background: #bada55; }
+  .flag-wrapper .flag_3 {
+    grid-area: 3 / 1 / 4 / 2;
+    background: #f1111a; }
